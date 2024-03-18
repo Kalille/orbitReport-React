@@ -1,9 +1,12 @@
+import "./styling.css";
 const Table = ({ sat }) => {
+  // console.log(sat)
   return (
     <table>
     <thead>
      <tr>
        <th>Header TBD</th>
+       
      </tr>
      </thead>
      <tbody>
