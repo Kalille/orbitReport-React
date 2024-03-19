@@ -13,17 +13,16 @@ function App() {
 
   const filterByType = (currentType) => {
     const displaySats = satData.filter((newSatDisplay) => {
-        newSatDisplay.orbitType === currentType;
-        setSat(displaySats);
+       return newSatDisplay.orbitType === currentType;
     });
- 
+    setSat(displaySats);
  };
-  // console.log(filterByType(displaySats))
-  // console.log(sat)
+
   return (
     <div>
       <Banner/>
       <Buttons
+     
        filterByType={filterByType}
        setSat={setSat}
        displaySats={displaySats} />
